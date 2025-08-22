@@ -5,6 +5,7 @@ import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
 import Blog from "../components/blog/Blog";
 import Profession from "../components/profession/Profession";
+import Skills from "../components/skills/Skills";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
 import Contact from "../components/contact/Contact";
@@ -16,7 +17,7 @@ const Home = () => {
       <div className="introduction-profile-background">
         <div className="content">
           <Introduction />
-          <Profile />
+          {/* <Profile /> */}
         </div>
       </div>
       <div className="bg-soft-white pt-30">
@@ -34,6 +35,9 @@ const Home = () => {
       </div>
       <HappyClients />
       <Testimonial />
+      <div className="bg-soft-white">
+        <Skills />
+      </div>
       <Contact />
     </div>
   );
